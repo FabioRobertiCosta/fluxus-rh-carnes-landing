@@ -25,11 +25,12 @@
             serif: ['Playfair Display', 'Georgia', 'serif'],
           },
           colors: {
-            rhBurgundy: '#18080a',
-            rhBurgundyDark: '#0e0405',
-            rhBurgundyCard: '#240d10',
-            rhRed: '#dc2626',
-            rhRedBright: '#ef4444',
+            rhBurgundy: '#2d1015',
+            rhBurgundyLight: '#38141a',
+            rhBurgundyCard: '#4a1a22',
+            rhBurgundyDark: '#1f0a0e',
+            rhRed: '#e11d48',
+            rhRedBright: '#f43f5e',
             agileAmber: '#f59e0b',
             metaGreen: '#10b981',
           }
@@ -47,12 +48,12 @@
     /* Glow Infinito para Badges */
     @keyframes pulseGlowBadge {
       0%, 100% {
-        box-shadow: 0 0 10px rgba(220, 38, 38, 0.4), inset 0 0 6px rgba(220, 38, 38, 0.2);
-        border-color: rgba(220, 38, 38, 0.6);
+        box-shadow: 0 0 10px rgba(225, 29, 72, 0.4), inset 0 0 6px rgba(225, 29, 72, 0.2);
+        border-color: rgba(225, 29, 72, 0.6);
       }
       50% {
-        box-shadow: 0 0 20px rgba(239, 68, 68, 0.8), inset 0 0 12px rgba(239, 68, 68, 0.4);
-        border-color: rgba(239, 68, 68, 0.9);
+        box-shadow: 0 0 20px rgba(244, 63, 94, 0.8), inset 0 0 12px rgba(244, 63, 94, 0.4);
+        border-color: rgba(244, 63, 94, 0.9);
       }
     }
 
@@ -60,13 +61,13 @@
       animation: pulseGlowBadge 2.5s infinite ease-in-out;
     }
 
-    /* Glow Infinito para Botões Principal */
+    /* Glow Infinito para Botão Principal */
     @keyframes pulseGlowRed {
       0%, 100% {
-        box-shadow: 0 0 12px rgba(220, 38, 38, 0.4), inset 0 0 10px rgba(220, 38, 38, 0.2);
+        box-shadow: 0 0 12px rgba(225, 29, 72, 0.4), inset 0 0 10px rgba(225, 29, 72, 0.2);
       }
       50% {
-        box-shadow: 0 0 28px rgba(239, 68, 68, 0.8), inset 0 0 18px rgba(239, 68, 68, 0.4);
+        box-shadow: 0 0 28px rgba(244, 63, 94, 0.8), inset 0 0 18px rgba(244, 63, 94, 0.4);
       }
     }
 
@@ -86,9 +87,9 @@
       100% { background-position: 200% 0; }
     }
 
-    /* Classes de Degradê Dinâmico com Paleta Burgundy & Red */
+    /* Classes de Degradê Dinâmico Light Burgundy */
     .glow-right-left {
-      background: linear-gradient(270deg, #ef4444 0%, #f59e0b 40%, #f87171 80%, #dc2626 100%);
+      background: linear-gradient(270deg, #f43f5e 0%, #fbbf24 40%, #fb7185 80%, #e11d48 100%);
       background-size: 200% auto;
       color: transparent;
       -webkit-background-clip: text;
@@ -97,7 +98,7 @@
     }
 
     .glow-left-right {
-      background: linear-gradient(90deg, #dc2626 0%, #f87171 30%, #f59e0b 60%, #ef4444 100%);
+      background: linear-gradient(90deg, #e11d48 0%, #fb7185 30%, #fbbf24 60%, #f43f5e 100%);
       background-size: 200% auto;
       color: transparent;
       -webkit-background-clip: text;
@@ -110,11 +111,11 @@
     }
     .card-hover-effect:hover {
       transform: translateY(-5px) scale(1.01);
-      box-shadow: 0 15px 30px -10px rgba(220, 38, 38, 0.4);
+      box-shadow: 0 15px 30px -10px rgba(225, 29, 72, 0.4);
     }
 
     .btn-agile-glow {
-      background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+      background: linear-gradient(135deg, #e11d48 0%, #be123c 100%);
       transition: all 0.3s ease;
       position: relative;
       overflow: hidden;
@@ -126,26 +127,26 @@
     }
 
     .modal-backdrop {
-      background-color: rgba(14, 4, 5, 0.92);
+      background-color: rgba(31, 10, 14, 0.92);
       backdrop-filter: blur(12px);
     }
   </style>
 </head>
 
-<body class="bg-[#18080a] text-slate-100 font-sans antialiased transition-colors duration-300 overflow-x-hidden">
+<body class="bg-[#2d1015] text-slate-100 font-sans antialiased transition-colors duration-300 overflow-x-hidden">
 
   <!-- HEADER OFICIAL UNIFICADO -->
-  <header id="header" class="sticky top-0 z-50 w-full bg-[#18080a]/95 backdrop-blur-md border-b-2 border-red-950/80">
+  <header id="header" class="sticky top-0 z-50 w-full bg-[#1f0a0e]/95 backdrop-blur-md border-b-2 border-rose-900/60">
     <div class="w-full max-w-[1440px] mx-auto px-6 lg:px-12 h-20 flex items-center justify-between gap-4">
-      <a href="https://fabioroberticosta.github.io/fluxus-rh-carnes/" class="flex items-center gap-3 shrink-0">
-        <div class="w-10 h-10 overflow-hidden rounded-xl flex items-center justify-center bg-black border-2 border-rhRed shadow-[0_0_12px_rgba(220,38,38,0.5)]">
+      <a href="https://fabioroberticosta.github.io/fluxus-agile-landing/" class="flex items-center gap-3 shrink-0">
+        <div class="w-10 h-10 overflow-hidden rounded-xl flex items-center justify-center bg-black border-2 border-rhRed shadow-[0_0_12px_rgba(225,29,72,0.5)]">
           <img src="src/images/favicon-fluxus.jpg" alt="Logo Fluxus" class="w-full h-full object-cover scale-110" onerror="this.onerror=null; this.src='https://api.qrserver.com/v1/create-qr-code/?size=85x85&data=https://wa.me/551236006887';" />
         </div>
         <span class="font-black text-xl tracking-tight text-white uppercase">Fluxus <span class="text-xs text-agileAmber font-bold border border-agileAmber/40 px-2 py-0.5 rounded-full ml-1">RH Açougues</span></span>
       </a>
 
       <nav class="hidden lg:flex items-center gap-8">
-        <a href="https://fabioroberticosta.github.io/fluxus-rh-carnes/" class="font-black text-xs uppercase tracking-wider text-rhRedBright hover:text-red-400 transition flex items-center gap-1">🌐 Portal Principal</a>
+        <a href="https://fabioroberticosta.github.io/fluxus-agile-landing/" class="font-black text-xs uppercase tracking-wider text-rose-400 hover:text-rose-300 transition flex items-center gap-1">🌐 Portal Principal</a>
         <a href="#seguranca-meta" class="font-black text-xs uppercase tracking-wider text-emerald-400 hover:text-emerald-300 transition flex items-center gap-1">🛡️ API Oficial Meta</a>
         <a href="#manifesto" class="font-black text-xs uppercase tracking-wider text-slate-200 hover:text-rhRedBright transition">Nossa Filosofia</a>
         <a href="#esteira-rh" class="font-black text-xs uppercase tracking-wider text-slate-200 hover:text-rhRedBright transition">Soluções RH</a>
@@ -158,20 +159,20 @@
       </div>
     </div>
 
-    <div id="mobile-menu" class="hidden lg:hidden border-t-2 border-red-950/80 bg-[#18080a] px-6 py-6 space-y-3 shadow-2xl">
-      <a href="https://fabioroberticosta.github.io/fluxus-rh-carnes/" class="block font-black text-base uppercase tracking-wide py-2 border-b border-red-950/80 text-rhRedBright">🌐 Portal Principal</a>
-      <a href="#seguranca-meta" class="block font-black text-base uppercase tracking-wide py-2 border-b border-red-950/80 text-emerald-400">🛡️ API Oficial Meta</a>
-      <a href="#manifesto" class="block font-black text-base uppercase tracking-wide py-2 border-b border-red-950/80 text-white">Nossa Filosofia</a>
-      <a href="#esteira-rh" class="block font-black text-base uppercase tracking-wide py-2 border-b border-red-950/80 text-white">Soluções RH</a>
-      <a href="#investimento" class="block font-black text-base uppercase tracking-wide py-2 border-b border-red-950/80 text-agileAmber">💰 Investimento</a>
-      <a href="#lideranca" class="block font-black text-base uppercase tracking-wide py-2 border-b border-red-950/80 text-white">Liderança</a>
+    <div id="mobile-menu" class="hidden lg:hidden border-t-2 border-rose-900/60 bg-[#1f0a0e] px-6 py-6 space-y-3 shadow-2xl">
+      <a href="https://fabioroberticosta.github.io/fluxus-agile-landing/" class="block font-black text-base uppercase tracking-wide py-2 border-b border-rose-900/60 text-rose-400">🌐 Portal Principal</a>
+      <a href="#seguranca-meta" class="block font-black text-base uppercase tracking-wide py-2 border-b border-rose-900/60 text-emerald-400">🛡️ API Oficial Meta</a>
+      <a href="#manifesto" class="block font-black text-base uppercase tracking-wide py-2 border-b border-rose-900/60 text-white">Nossa Filosofia</a>
+      <a href="#esteira-rh" class="block font-black text-base uppercase tracking-wide py-2 border-b border-rose-900/60 text-white">Soluções RH</a>
+      <a href="#investimento" class="block font-black text-base uppercase tracking-wide py-2 border-b border-rose-900/60 text-agileAmber">💰 Investimento</a>
+      <a href="#lideranca" class="block font-black text-base uppercase tracking-wide py-2 border-b border-rose-900/60 text-white">Liderança</a>
     </div>
   </header>
 
   <main id="main-content">
     
     <!-- 1. HERO SECTION -->
-    <section id="hero" class="w-full flex flex-col justify-center pt-8 pb-12 lg:pt-12 lg:pb-16 bg-[#18080a] overflow-hidden">
+    <section id="hero" class="w-full flex flex-col justify-center pt-8 pb-12 lg:pt-12 lg:pb-16 bg-[#2d1015] overflow-hidden">
       <div class="w-full max-w-[1440px] mx-auto px-6 lg:px-12 text-center mb-6 lg:mb-10 space-y-3">
         <div class="flex flex-wrap items-center justify-center gap-2 mb-2">
           <span class="bg-emerald-500/10 text-emerald-400 font-black text-[11px] uppercase px-3 py-1 rounded-full border border-emerald-500/40 tracking-wider inline-flex items-center gap-1.5 shadow-[0_0_12px_rgba(16,185,129,0.2)]">
@@ -201,7 +202,7 @@
             <p class="text-slate-200 text-sm sm:text-base leading-relaxed font-medium">
               Elimine a perda de bons profissionais por falta de suporte. Substitua a demora na resposta por um atendimento automático no <strong>WhatsApp Oficial da Meta</strong>, integrado às suas planilhas e CRM.
             </p>
-            <p class="text-slate-400 text-xs sm:text-sm leading-relaxed border-l-4 border-rhRed pl-3">
+            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed border-l-4 border-rhRed pl-3">
               Nossa tecnologia apoia a sua gerência de loja: facilitamos a captação de desossadores e balconistas, a triagem rápida de currículos e a integração de novos contratados via WhatsApp.
             </p>
           </div>
@@ -214,16 +215,16 @@
             </a>
             <a href="https://wa.me/551236006887?text=Olá!%20Quero%20testar%20o%20robô%20de%20atendimento%20para%20açougue." 
                target="_blank" rel="noopener" 
-               class="px-6 py-3.5 bg-black text-white font-black text-xs uppercase tracking-wider rounded-full border-2 border-red-950 hover:border-rhRed transition text-center w-full sm:w-auto">
+               class="px-6 py-3.5 bg-[#1f0a0e] text-white font-black text-xs uppercase tracking-wider rounded-full border-2 border-rose-900/80 hover:border-rhRed transition text-center w-full sm:w-auto">
               Testar no WhatsApp ⚡
             </a>
           </div>
         </div>
 
-        <aside class="w-full bg-[#240d10] rounded-2xl overflow-hidden float-animation border-2 border-rhRed/50 p-5 space-y-4 shadow-[0_0_25px_rgba(220,38,38,0.2)]">
-          <div class="flex items-center justify-between border-b border-red-950/80 pb-3">
+        <aside class="w-full bg-[#38141a] rounded-2xl overflow-hidden float-animation border-2 border-rhRed/50 p-5 space-y-4 shadow-[0_0_25px_rgba(225,29,72,0.25)]">
+          <div class="flex items-center justify-between border-b border-rose-900/60 pb-3">
             <div class="flex items-center gap-3">
-              <div class="w-9 h-9 rounded-full bg-rhRed flex items-center justify-center font-black text-white text-xs shadow-[0_0_8px_#dc2626]">IA</div>
+              <div class="w-9 h-9 rounded-full bg-rhRed flex items-center justify-center font-black text-white text-xs shadow-[0_0_8px_#e11d48]">IA</div>
               <div>
                 <h4 class="font-black text-white text-sm">Robô Oficial Fluxus (Açougue)</h4>
                 <p class="text-[11px] text-emerald-400 font-bold">● Meta Cloud API Conectada</p>
@@ -234,14 +235,14 @@
 
           <!-- MOCKUP COM EXEMPLOS PRÁTICOS -->
           <div class="space-y-2.5 font-sans text-xs">
-            <div class="bg-black/80 text-slate-200 p-3 rounded-xl rounded-tl-none max-w-[88%] border border-red-950/60">
+            <div class="bg-[#1f0a0e]/90 text-slate-200 p-3 rounded-xl rounded-tl-none max-w-[88%] border border-rose-900/40">
               <p class="font-bold text-rhRedBright mb-0.5">💬 Candidato a Balconista / Desossador:</p>
               <p>Quero enviar meu currículo para a vaga de açougueiro ou verificar a escala do fim de semana!</p>
             </div>
             <div class="bg-rhRed/20 text-white p-3 rounded-xl rounded-tr-none max-w-[85%] ml-auto border border-rhRed/40">
               <p>⚡ Resposta em 2s: Currículo registrado no banco de talentos e link da escala enviado com sucesso!</p>
             </div>
-            <div class="bg-black/80 text-slate-200 p-3 rounded-xl rounded-tl-none max-w-[88%] border border-red-950/60">
+            <div class="bg-[#1f0a0e]/90 text-slate-200 p-3 rounded-xl rounded-tl-none max-w-[88%] border border-rose-900/40">
               <p class="font-bold text-amber-400 mb-0.5">🥩 Novo Funcionário (Treinamento):</p>
               <p>Onde vejo o manual de higienização de balcão e uso dos equipamentos de proteção (EPIs)?</p>
             </div>
@@ -250,18 +251,18 @@
             </div>
           </div>
 
-          <div class="grid grid-cols-3 text-center border-t border-red-950/80 pt-3">
+          <div class="grid grid-cols-3 text-center border-t border-rose-900/60 pt-3">
             <div>
               <strong class="block text-lg font-black text-rhRedBright">2s</strong>
-              <span class="text-[9px] font-black text-slate-400 uppercase">Tempo de Resposta</span>
+              <span class="text-[9px] font-black text-slate-300 uppercase">Tempo de Resposta</span>
             </div>
             <div>
               <strong class="block text-lg font-black text-emerald-400">0%</strong>
-              <span class="text-[9px] font-black text-slate-400 uppercase">Risco de Banimento</span>
+              <span class="text-[9px] font-black text-slate-300 uppercase">Risco de Banimento</span>
             </div>
             <div>
               <strong class="block text-lg font-black text-rhRedBright">100%</strong>
-              <span class="text-[9px] font-black text-slate-400 uppercase">Apoio à Loja</span>
+              <span class="text-[9px] font-black text-slate-300 uppercase">Apoio à Loja</span>
             </div>
           </div>
         </aside>
@@ -269,7 +270,7 @@
     </section>
 
     <!-- SEÇÃO: SEGURANÇA E META CLOUD API -->
-    <section id="seguranca-meta" class="py-12 bg-[#0e0405] border-t-2 border-emerald-500/30">
+    <section id="seguranca-meta" class="py-12 bg-[#1f0a0e] border-t-2 border-emerald-500/30">
       <div class="w-full max-w-[1440px] mx-auto px-6 lg:px-12">
         <div class="text-center max-w-4xl mx-auto space-y-2 mb-10">
           <span class="bg-emerald-500/10 text-emerald-400 font-black text-[11px] uppercase px-4 py-1.5 rounded-full border border-emerald-500/40 tracking-widest inline-block badge-glow-infinito">
@@ -285,24 +286,24 @@
 
         <!-- TABELA COMPARATIVA -->
         <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-          <div class="bg-red-950/30 border-2 border-red-600/40 p-6 rounded-2xl space-y-3 relative">
-            <div class="absolute top-0 right-0 bg-red-600 text-white font-black text-[9px] uppercase px-3 py-1 rounded-bl-lg">
+          <div class="bg-rose-950/30 border-2 border-rose-700/40 p-6 rounded-2xl space-y-3 relative">
+            <div class="absolute top-0 right-0 bg-rose-600 text-white font-black text-[9px] uppercase px-3 py-1 rounded-bl-lg">
               Risco Alto
             </div>
-            <h3 class="font-black text-base text-red-400 uppercase flex items-center gap-2">
+            <h3 class="font-black text-base text-rose-300 uppercase flex items-center gap-2">
               <span>⚠️</span> Sistemas Piratas (QR Code)
             </h3>
             <ul class="space-y-2 text-xs text-slate-300">
               <li class="flex items-start gap-2">
-                <span class="text-red-500 font-bold">✕</span>
+                <span class="text-rose-500 font-bold">✕</span>
                 <span>Usa robôs falsos detectados facilmente pelos sistemas da Meta.</span>
               </li>
               <li class="flex items-start gap-2">
-                <span class="text-red-500 font-bold">✕</span>
+                <span class="text-rose-500 font-bold">✕</span>
                 <span>Risco alto de banimento definitivo do número da loja.</span>
               </li>
               <li class="flex items-start gap-2">
-                <span class="text-red-500 font-bold">✕</span>
+                <span class="text-rose-500 font-bold">✕</span>
                 <span>Depende de celular ligado na tomada e Wi-Fi estável.</span>
               </li>
             </ul>
@@ -335,7 +336,7 @@
     </section>
 
     <!-- SEÇÃO 1: IMPLANTAÇÃO ÁGIL 100% NO WHATSAPP -->
-    <section id="implantacao-agile" class="py-12 bg-[#1d0b0d] border-t-2 border-red-950/80">
+    <section id="implantacao-agile" class="py-12 bg-[#38141a] border-t-2 border-rose-900/60">
       <div class="w-full max-w-[1440px] mx-auto px-6 lg:px-12 text-center">
         <div class="max-w-4xl mx-auto space-y-2 mb-10">
           <span class="bg-amber-500/10 text-amber-400 font-black text-[11px] uppercase px-4 py-1.5 rounded-full border border-amber-500/40 tracking-widest inline-block badge-glow-infinito">
@@ -351,43 +352,43 @@
         </div>
 
         <div class="grid md:grid-cols-3 gap-6 text-left items-stretch">
-          <div onclick="openModal('modal-impl-1')" class="cursor-pointer bg-[#240d10] border-2 border-red-950/80 p-6 rounded-2xl flex flex-col justify-between hover:border-rhRedBright card-hover-effect shadow-lg group">
+          <div onclick="openModal('modal-impl-1')" class="cursor-pointer bg-[#4a1a22] border-2 border-rose-900/60 p-6 rounded-2xl flex flex-col justify-between hover:border-rhRedBright card-hover-effect shadow-lg group">
             <div class="space-y-3">
               <div class="w-10 h-10 rounded-xl bg-rhRed/20 text-rhRedBright flex items-center justify-center font-black text-xl border border-rhRed/40 group-hover:scale-110 transition">💬</div>
               <h3 class="font-black text-base text-white uppercase tracking-tight">Zero Reuniões Longas</h3>
-              <p class="text-slate-300 text-xs leading-relaxed">
+              <p class="text-slate-200 text-xs leading-relaxed">
                 Envie tabelas de cortes, regras de higiene e horários de escala por simples mensagens de voz ou fotos no WhatsApp.
               </p>
             </div>
-            <div class="pt-3 border-t border-red-950/80 flex items-center justify-between text-[11px] text-rhRedBright font-bold uppercase mt-4">
+            <div class="pt-3 border-t border-rose-900/60 flex items-center justify-between text-[11px] text-rhRedBright font-bold uppercase mt-4">
               <span>Saiba mais ➔</span>
               <span class="bg-rhRed/20 px-2 py-0.5 rounded border border-rhRed/40">Clique</span>
             </div>
           </div>
 
-          <div onclick="openModal('modal-impl-2')" class="cursor-pointer bg-[#240d10] border-2 border-red-950/80 p-6 rounded-2xl flex flex-col justify-between hover:border-amber-500 card-hover-effect shadow-lg group">
+          <div onclick="openModal('modal-impl-2')" class="cursor-pointer bg-[#4a1a22] border-2 border-rose-900/60 p-6 rounded-2xl flex flex-col justify-between hover:border-amber-500 card-hover-effect shadow-lg group">
             <div class="space-y-3">
               <div class="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center font-black text-xl border border-amber-500/40 group-hover:scale-110 transition">👥</div>
               <h3 class="font-black text-base text-white uppercase tracking-tight">Sem Sobrecarregar o Dono</h3>
-              <p class="text-slate-300 text-xs leading-relaxed">
+              <p class="text-slate-200 text-xs leading-relaxed">
                 O proprietário foca na compra de carnes. Configuramos o robô diretamente com o gerente da loja ou encarregado.
               </p>
             </div>
-            <div class="pt-3 border-t border-red-950/80 flex items-center justify-between text-[11px] text-amber-400 font-bold uppercase mt-4">
+            <div class="pt-3 border-t border-rose-900/60 flex items-center justify-between text-[11px] text-amber-400 font-bold uppercase mt-4">
               <span>Saiba mais ➔</span>
               <span class="bg-amber-500/20 px-2 py-0.5 rounded border border-amber-500/40">Clique</span>
             </div>
           </div>
 
-          <div onclick="openModal('modal-impl-3')" class="cursor-pointer bg-[#240d10] border-2 border-red-950/80 p-6 rounded-2xl flex flex-col justify-between hover:border-emerald-500 card-hover-effect shadow-lg group">
+          <div onclick="openModal('modal-impl-3')" class="cursor-pointer bg-[#4a1a22] border-2 border-rose-900/60 p-6 rounded-2xl flex flex-col justify-between hover:border-emerald-500 card-hover-effect shadow-lg group">
             <div class="space-y-3">
               <div class="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-black text-xl border border-emerald-500/40 group-hover:scale-110 transition">📲</div>
               <h3 class="font-black text-base text-white uppercase tracking-tight">Treinamento Direto no Celular</h3>
-              <p class="text-slate-300 text-xs leading-relaxed">
+              <p class="text-slate-200 text-xs leading-relaxed">
                 Seus funcionários aprendem a acessar o painel e consultar manuais com vídeos explicativos diretos de 2 minutos no próprio celular.
               </p>
             </div>
-            <div class="pt-3 border-t border-red-950/80 flex items-center justify-between text-[11px] text-emerald-400 font-bold uppercase mt-4">
+            <div class="pt-3 border-t border-rose-900/60 flex items-center justify-between text-[11px] text-emerald-400 font-bold uppercase mt-4">
               <span>Saiba mais ➔</span>
               <span class="bg-emerald-500/20 px-2 py-0.5 rounded border border-emerald-500/40">Clique</span>
             </div>
@@ -397,7 +398,7 @@
     </section>
 
     <!-- SEÇÃO 2: FILOSOFIA & CARDS CLICÁVEIS -->
-    <section id="manifesto" class="py-12 bg-[#120507] border-y-2 border-red-950/80 text-white">
+    <section id="manifesto" class="py-12 bg-[#230b0f] border-y-2 border-rose-900/60 text-white">
       <div class="w-full max-w-[1440px] mx-auto px-6 lg:px-12">
         <div class="max-w-4xl mx-auto text-center space-y-2 mb-10">
           <span class="bg-agileAmber/10 text-agileAmber font-black text-[11px] uppercase px-4 py-1.5 rounded-full border border-agileAmber/40 tracking-widest inline-block badge-glow-infinito">
@@ -413,43 +414,43 @@
         </div>
 
         <div class="grid md:grid-cols-3 gap-6 items-stretch">
-          <div onclick="openModal('modal-repetitivo')" class="cursor-pointer bg-[#18080a] border-2 border-red-950/80 p-6 rounded-2xl flex flex-col justify-between card-hover-effect hover:border-rhRed group relative overflow-hidden shadow-lg">
+          <div onclick="openModal('modal-repetitivo')" class="cursor-pointer bg-[#2d1015] border-2 border-rose-900/60 p-6 rounded-2xl flex flex-col justify-between card-hover-effect hover:border-rhRed group relative overflow-hidden shadow-lg">
             <div class="space-y-4">
               <div class="w-12 h-12 rounded-xl bg-rhRed/20 text-rhRedBright flex items-center justify-center font-black text-xl border border-rhRed/40 group-hover:scale-110 transition">💬</div>
               <h3 class="font-black text-base text-white uppercase tracking-tight group-hover:text-rhRedBright transition">Atendimento Repetitivo</h3>
-              <p class="text-slate-300 text-xs leading-relaxed">
+              <p class="text-slate-200 text-xs leading-relaxed">
                 Respostas automáticas no WhatsApp para dúvidas diárias sobre escalas, folgas, holerites e normas de conduta no açougue.
               </p>
             </div>
-            <div class="mt-6 pt-3 border-t border-red-950/80 flex items-center justify-between text-[11px] text-rhRedBright font-black uppercase">
+            <div class="mt-6 pt-3 border-t border-rose-900/60 flex items-center justify-between text-[11px] text-rhRedBright font-black uppercase">
               <span>Como atualizar? ➔</span>
               <span class="bg-rhRed/20 px-2.5 py-0.5 rounded-full border border-rhRed/40">Clique</span>
             </div>
           </div>
 
-          <div onclick="openModal('modal-valorizacao')" class="cursor-pointer bg-[#18080a] border-2 border-red-950/80 p-6 rounded-2xl flex flex-col justify-between card-hover-effect hover:border-agileAmber group relative overflow-hidden shadow-lg">
+          <div onclick="openModal('modal-valorizacao')" class="cursor-pointer bg-[#2d1015] border-2 border-rose-900/60 p-6 rounded-2xl flex flex-col justify-between card-hover-effect hover:border-agileAmber group relative overflow-hidden shadow-lg">
             <div class="space-y-4">
               <div class="w-12 h-12 rounded-xl bg-agileAmber/20 text-agileAmber flex items-center justify-center font-black text-xl border border-agileAmber/40 group-hover:scale-110 transition">❤️</div>
               <h3 class="font-black text-base text-white uppercase tracking-tight group-hover:text-agileAmber transition">Valorização Humana</h3>
-              <p class="text-slate-300 text-xs leading-relaxed">
+              <p class="text-slate-200 text-xs leading-relaxed">
                 Mais tempo livre para o gerente acompanhar a rotina do balcão, orientar os funcionários e manter a qualidade do atendimento.
               </p>
             </div>
-            <div class="mt-6 pt-3 border-t border-red-950/80 flex items-center justify-between text-[11px] text-agileAmber font-black uppercase">
+            <div class="mt-6 pt-3 border-t border-rose-900/60 flex items-center justify-between text-[11px] text-agileAmber font-black uppercase">
               <span>Ver ações práticas ➔</span>
               <span class="bg-agileAmber/20 px-2.5 py-0.5 rounded-full border border-agileAmber/40">Clique</span>
             </div>
           </div>
 
-          <div onclick="openModal('modal-banco-talentos')" class="cursor-pointer bg-[#18080a] border-2 border-red-950/80 p-6 rounded-2xl flex flex-col justify-between card-hover-effect hover:border-emerald-500 group relative overflow-hidden shadow-lg">
+          <div onclick="openModal('modal-banco-talentos')" class="cursor-pointer bg-[#2d1015] border-2 border-rose-900/60 p-6 rounded-2xl flex flex-col justify-between card-hover-effect hover:border-emerald-500 group relative overflow-hidden shadow-lg">
             <div class="space-y-4">
               <div class="w-12 h-12 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-black text-xl border border-emerald-500/40 group-hover:scale-110 transition">📁</div>
               <h3 class="font-black text-base text-white uppercase tracking-tight group-hover:text-emerald-400 transition">Banco de Talentos 24/7</h3>
-              <p class="text-slate-300 text-xs leading-relaxed">
+              <p class="text-slate-200 text-xs leading-relaxed">
                 Recebimento contínuo de currículos no WhatsApp para você selecionar rapidamente açougueiros, desossadores e caixa.
               </p>
             </div>
-            <div class="mt-6 pt-3 border-t border-red-950/80 flex items-center justify-between text-[11px] text-emerald-400 font-black uppercase">
+            <div class="mt-6 pt-3 border-t border-rose-900/60 flex items-center justify-between text-[11px] text-emerald-400 font-black uppercase">
               <span>Ver processo ➔</span>
               <span class="bg-emerald-500/20 px-2.5 py-0.5 rounded-full border border-emerald-500/40">Clique</span>
             </div>
@@ -459,7 +460,7 @@
     </section>
 
     <!-- SEÇÃO 3: APOIO AO RH -->
-    <section id="esteira-rh" class="py-12 bg-[#18080a]">
+    <section id="esteira-rh" class="py-12 bg-[#2d1015]">
       <div class="w-full max-w-[1440px] mx-auto px-6 lg:px-12">
         <div class="text-center max-w-4xl mx-auto space-y-2 mb-10">
           <span class="bg-rhRed/10 text-rhRedBright font-black text-[11px] uppercase px-4 py-1.5 rounded-full border border-rhRed/40 tracking-widest inline-block badge-glow-infinito">
@@ -475,38 +476,38 @@
         </div>
 
         <div class="grid md:grid-cols-4 gap-5 items-stretch">
-          <div onclick="openModal('modal-step-1')" class="cursor-pointer bg-[#240d10] border-2 border-red-950/80 p-5 rounded-2xl flex flex-col justify-between hover:border-rhRed card-hover-effect transition">
+          <div onclick="openModal('modal-step-1')" class="cursor-pointer bg-[#38141a] border-2 border-rose-900/60 p-5 rounded-2xl flex flex-col justify-between hover:border-rhRed card-hover-effect transition">
             <div class="space-y-2">
               <span class="text-xl font-black text-rhRedBright">01</span>
               <h3 class="font-black text-sm text-white uppercase">Captação no Celular</h3>
-              <p class="text-slate-300 text-xs leading-relaxed">Recebimento direto de currículos para vagas de açougue 24 horas por dia via WhatsApp.</p>
+              <p class="text-slate-200 text-xs leading-relaxed">Recebimento direto de currículos para vagas de açougue 24 horas por dia via WhatsApp.</p>
             </div>
             <div class="pt-3 text-[11px] text-rhRedBright font-bold uppercase mt-3">Ver detalhes ➔</div>
           </div>
 
-          <div onclick="openModal('modal-step-2')" class="cursor-pointer bg-[#240d10] border-2 border-red-950/80 p-5 rounded-2xl flex flex-col justify-between hover:border-rhRed card-hover-effect transition">
+          <div onclick="openModal('modal-step-2')" class="cursor-pointer bg-[#38141a] border-2 border-rose-900/60 p-5 rounded-2xl flex flex-col justify-between hover:border-rhRed card-hover-effect transition">
             <div class="space-y-2">
               <span class="text-xl font-black text-rhRedBright">02</span>
               <h3 class="font-black text-sm text-white uppercase">Triagem Rápida</h3>
-              <p class="text-slate-300 text-xs leading-relaxed">Perguntas automáticas sobre tempo de experiência em cortes e disponibilidade para o gerente escolher.</p>
+              <p class="text-slate-200 text-xs leading-relaxed">Perguntas automáticas sobre tempo de experiência em cortes e disponibilidade para o gerente escolher.</p>
             </div>
             <div class="pt-3 text-[11px] text-rhRedBright font-bold uppercase mt-3">Ver detalhes ➔</div>
           </div>
 
-          <div onclick="openModal('modal-step-3')" class="cursor-pointer bg-[#240d10] border-2 border-red-950/80 p-5 rounded-2xl flex flex-col justify-between hover:border-rhRed card-hover-effect transition">
+          <div onclick="openModal('modal-step-3')" class="cursor-pointer bg-[#38141a] border-2 border-rose-900/60 p-5 rounded-2xl flex flex-col justify-between hover:border-rhRed card-hover-effect transition">
             <div class="space-y-2">
               <span class="text-xl font-black text-rhRedBright">03</span>
               <h3 class="font-black text-sm text-white uppercase">Página de Integração</h3>
-              <p class="text-slate-300 text-xs leading-relaxed">Criação da sua página de boas-vindas com a história da casa de carnes, regras de higiene e postura.</p>
+              <p class="text-slate-200 text-xs leading-relaxed">Criação da sua página de boas-vindas com a história da casa de carnes, regras de higiene e postura.</p>
             </div>
             <div class="pt-3 text-[11px] text-rhRedBright font-bold uppercase mt-3">Ver detalhes ➔</div>
           </div>
 
-          <div onclick="openModal('modal-step-4')" class="cursor-pointer bg-[#240d10] border-2 border-red-950/80 p-5 rounded-2xl flex flex-col justify-between hover:border-rhRed card-hover-effect transition">
+          <div onclick="openModal('modal-step-4')" class="cursor-pointer bg-[#38141a] border-2 border-rose-900/60 p-5 rounded-2xl flex flex-col justify-between hover:border-rhRed card-hover-effect transition">
             <div class="space-y-2">
               <span class="text-xl font-black text-rhRedBright">04</span>
               <h3 class="font-black text-sm text-white uppercase">Módulos de Treinamento</h3>
-              <p class="text-slate-300 text-xs leading-relaxed">Envio de orientações sobre conservação de carnes, atendimento e segurança do trabalho no celular do funcionário.</p>
+              <p class="text-slate-200 text-xs leading-relaxed">Envio de orientações sobre conservação de carnes, atendimento e segurança do trabalho no celular do funcionário.</p>
             </div>
             <div class="pt-3 text-[11px] text-rhRedBright font-bold uppercase mt-3">Ver detalhes ➔</div>
           </div>
@@ -515,7 +516,7 @@
     </section>
 
     <!-- 4. PLANOS E INVESTIMENTO -->
-    <section id="investimento" class="py-16 bg-[#0e0405] border-t-2 border-red-950/80">
+    <section id="investimento" class="py-16 bg-[#1f0a0e] border-t-2 border-rose-900/60">
       <div class="w-full max-w-[1440px] mx-auto px-6 lg:px-12">
         <div class="text-center mb-12 space-y-3">
           <span class="bg-agileAmber/10 text-agileAmber font-black text-[11px] uppercase px-4 py-1.5 rounded-full border border-agileAmber/40 tracking-widest inline-block badge-glow-infinito">
@@ -532,12 +533,12 @@
         <div class="grid md:grid-cols-3 gap-6 items-stretch">
           
           <!-- PLANO 1: STARTER -->
-          <div class="bg-[#240d10] border-2 border-red-950/80 rounded-3xl p-6 sm:p-8 shadow-xl flex flex-col justify-between hover:border-red-900/60 transition">
+          <div class="bg-[#38141a] border-2 border-rose-900/60 rounded-3xl p-6 sm:p-8 shadow-xl flex flex-col justify-between hover:border-rose-800 transition">
             <div>
               <h3 class="font-serif font-black text-xl text-white uppercase mb-2">RH Carnes Starter</h3>
               <p class="text-slate-300 text-xs mb-6 leading-relaxed">Automação de recepção e triagem inicial para acolher interessados e organizar seu banco de talentos no WhatsApp.</p>
               
-              <div class="border-t border-red-950/80 pt-5 mb-5 space-y-2">
+              <div class="border-t border-rose-900/60 pt-5 mb-5 space-y-2">
                 <div>
                   <p class="text-[10px] text-slate-400 uppercase font-bold">Taxa de Configuração única:</p>
                   <p class="font-black text-xl text-white">R$ 790,00</p>
@@ -548,9 +549,9 @@
                 </div>
               </div>
 
-              <div class="border-t border-red-950/80 pt-4 space-y-2">
+              <div class="border-t border-rose-900/60 pt-4 space-y-2">
                 <p class="text-[11px] font-black uppercase text-rhRedBright tracking-wider">O que está incluído:</p>
-                <ul class="space-y-2 text-xs font-semibold text-slate-300">
+                <ul class="space-y-2 text-xs font-semibold text-slate-200">
                   <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✓</span> Robô de Atendimento e Triagem via WhatsApp</li>
                   <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✓</span> Mapeamento do perfil com o gerente de loja</li>
                   <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✓</span> Banco de talentos automatizado</li>
@@ -561,13 +562,13 @@
 
             <a href="https://wa.me/551236006887?text=Olá!%20Quero%20ativar%20o%20Plano%20RH%20Carnes%20Starter." 
                target="_blank" rel="noopener" 
-               class="mt-8 w-full py-3.5 text-center bg-black border border-red-950 text-white font-black text-xs uppercase rounded-xl hover:border-rhRed transition">
+               class="mt-8 w-full py-3.5 text-center bg-[#1f0a0e] border border-rose-900/80 text-white font-black text-xs uppercase rounded-xl hover:border-rhRed transition">
               Ativar Starter ⚡
             </a>
           </div>
 
           <!-- PLANO 2: PRO (DESTAQUE CENTRAL COM EFEITO DE DESTACAMENTO) -->
-          <div class="bg-[#240d10] border-2 border-rhRed rounded-3xl p-6 sm:p-8 shadow-2xl flex flex-col justify-between transform lg:-translate-y-2 relative overflow-hidden">
+          <div class="bg-[#38141a] border-2 border-rhRed rounded-3xl p-6 sm:p-8 shadow-2xl flex flex-col justify-between transform lg:-translate-y-2 relative overflow-hidden">
             <div class="absolute top-0 right-0 bg-rhRed text-white font-black text-[9px] uppercase px-3 py-1 rounded-bl-lg">
               Mais Procurado
             </div>
@@ -575,7 +576,7 @@
               <h3 class="font-serif font-black text-xl text-white uppercase mb-2">RH Carnes Pro + Onboarding</h3>
               <p class="text-slate-300 text-xs mb-6 leading-relaxed">Acolhimento Inteligente + Landing Page de Onboarding com confirmação de Anvisa, EPIs e atendimento tira-dúvidas 24h para o colaborador.</p>
               
-              <div class="border-t border-red-950/80 pt-5 mb-5 space-y-2">
+              <div class="border-t border-rose-900/60 pt-5 mb-5 space-y-2">
                 <div>
                   <p class="text-[10px] text-slate-400 uppercase font-bold">Taxa de Configuração única:</p>
                   <p class="font-black text-xl text-white">R$ 1.500,00</p>
@@ -586,9 +587,9 @@
                 </div>
               </div>
 
-              <div class="border-t border-red-950/80 pt-4 space-y-2">
+              <div class="border-t border-rose-900/60 pt-4 space-y-2">
                 <p class="text-[11px] font-black uppercase text-agileAmber tracking-wider">O que está incluído:</p>
-                <ul class="space-y-2 text-xs font-semibold text-slate-300">
+                <ul class="space-y-2 text-xs font-semibold text-slate-200">
                   <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✓</span> Tudo do Plano Starter</li>
                   <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✓</span> Landing Page de Onboarding Exclusiva</li>
                   <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✓</span> Botão de Confirmação de Ciência Digital</li>
@@ -605,12 +606,12 @@
           </div>
 
           <!-- PLANO 3: ENTERPRISE -->
-          <div class="bg-[#240d10] border-2 border-red-950/80 rounded-3xl p-6 sm:p-8 shadow-xl flex flex-col justify-between hover:border-red-900/60 transition">
+          <div class="bg-[#38141a] border-2 border-rose-900/60 rounded-3xl p-6 sm:p-8 shadow-xl flex flex-col justify-between hover:border-rose-800 transition">
             <div>
               <h3 class="font-serif font-black text-xl text-white uppercase mb-2">RH Carnes Enterprise</h3>
               <p class="text-slate-300 text-xs mb-6 leading-relaxed">Plano Pro Completo + Módulo de Vendas de Encomendas de Churrasco e Kits de Carne automatizado com IA 24h sem atrito.</p>
               
-              <div class="border-t border-red-950/80 pt-5 mb-5 space-y-2">
+              <div class="border-t border-rose-900/60 pt-5 mb-5 space-y-2">
                 <div>
                   <p class="text-[10px] text-slate-400 uppercase font-bold">Taxa de Configuração única:</p>
                   <p class="font-black text-xl text-white">R$ 2.900,00</p>
@@ -621,9 +622,9 @@
                 </div>
               </div>
 
-              <div class="border-t border-red-950/80 pt-4 space-y-2">
+              <div class="border-t border-rose-900/60 pt-4 space-y-2">
                 <p class="text-[11px] font-black uppercase text-rhRedBright tracking-wider">O que está incluído:</p>
-                <ul class="space-y-2 text-xs font-semibold text-slate-300">
+                <ul class="space-y-2 text-xs font-semibold text-slate-200">
                   <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✓</span> Tudo do Plano Pro</li>
                   <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✓</span> Robô de Vendas de Kits &amp; Encomendas</li>
                   <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">✓</span> Acompanhamento estratégico direto com o CTO</li>
@@ -634,7 +635,7 @@
 
             <a href="https://wa.me/551236006887?text=Olá!%20Quero%20ativar%20o%20Plano%20RH%20Carnes%20Enterprise." 
                target="_blank" rel="noopener" 
-               class="mt-8 w-full py-3.5 text-center bg-black border border-red-950 text-white font-black text-xs uppercase rounded-xl hover:border-rhRed transition">
+               class="mt-8 w-full py-3.5 text-center bg-[#1f0a0e] border border-rose-900/80 text-white font-black text-xs uppercase rounded-xl hover:border-rhRed transition">
               Ativar Enterprise ⚡
             </a>
           </div>
@@ -644,9 +645,9 @@
     </section>
 
     <!-- SEÇÃO 5: LIDERANÇA TÉCNICA -->
-    <section id="lideranca" class="py-12 bg-[#18080a] border-t-2 border-red-950/80">
+    <section id="lideranca" class="py-12 bg-[#2d1015] border-t-2 border-rose-900/60">
       <div class="w-full max-w-[1440px] mx-auto px-6 lg:px-12">
-        <div class="bg-[#240d10] border-2 border-red-950/80 rounded-3xl p-6 sm:p-10 grid lg:grid-cols-3 gap-8 items-center shadow-xl">
+        <div class="bg-[#38141a] border-2 border-rose-900/60 rounded-3xl p-6 sm:p-10 grid lg:grid-cols-3 gap-8 items-center shadow-xl">
           <div class="space-y-3 lg:col-span-2">
             <span class="bg-rhRed/10 text-rhRedBright font-black text-[11px] uppercase px-4 py-1.5 rounded-full border border-rhRed/40 tracking-widest inline-block badge-glow-infinito">
               👨‍💼 LIDERANÇA TÉCNICA | EXPERIÊNCIA PRÁTICA
@@ -654,16 +655,16 @@
             <h2 class="font-serif font-black text-xl sm:text-2xl lg:text-3xl uppercase text-white leading-tight glow-right-left">
               DESENHADO POR QUEM VIVEU A OPERAÇÃO <br />DA BASE ATÉ A LIDERANÇA
             </h2>
-            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+            <p class="text-slate-200 text-xs sm:text-sm leading-relaxed">
               Sob a liderança de <strong>Fabio Roberti Costa - CTO, Scrum Master e Arquiteto de Soluções</strong>, a Fluxus <br />combina mais de 30 anos de experiência real em gestão e liderança de equipe em Varejo,<br /> Alimentação e Hotelaria com a velocidade da tecnologia ágil.
             </p>
-            <p class="text-slate-400 text-xs leading-relaxed">
-              Entregamos ferramentas práticas que funcionam na WhatsApp Cloud API Oficial da Meta, permitindo que a sua empresa <br />cuide do seu cliente interno com total estabilidade.
+            <p class="text-slate-300 text-xs leading-relaxed">
+              Entregamos ferramentas práticas que funcionam na WhatsApp Cloud API Oficial da Meta, permitando que a sua empresa <br />cuide do seu cliente interno com total estabilidade.
             </p>
           </div>
 
-          <div class="bg-[#18080a] p-5 rounded-2xl border border-red-950/80 text-center space-y-3">
-            <div class="w-20 h-20 mx-auto rounded-full overflow-hidden border-2 border-agileAmber shadow-[0_0_15px_rgba(220,38,38,0.4)]">
+          <div class="bg-[#1f0a0e] p-5 rounded-2xl border border-rose-900/60 text-center space-y-3">
+            <div class="w-20 h-20 mx-auto rounded-full overflow-hidden border-2 border-agileAmber shadow-[0_0_15px_rgba(225,29,72,0.4)]">
               <img src="./src/images/fabio-perfil.png" alt="Fabio Roberti Costa" class="w-full h-full object-cover" />
             </div>
 
@@ -673,7 +674,7 @@
               <p class="text-[10px] text-slate-400">Arquiteto de Soluções Ágeis &amp; Scrum Master</p>
             </div>
 
-            <div class="pt-2 border-t border-red-950/80 text-xs text-slate-300 space-y-1 text-left">
+            <div class="pt-2 border-t border-rose-900/60 text-xs text-slate-300 space-y-1 text-left">
               <p>✔ Ex-Gerente Geral Multi-Unidades</p>
               <p>✔ Especialista em WhatsApp Cloud API &amp; n8n</p>
               <p>✔ Atuação no Brasil e nos Estados Unidos</p>
@@ -689,12 +690,12 @@
 
   <!-- MODAIS IMPLANTAÇÃO -->
   <div id="modal-impl-1" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 modal-backdrop">
-    <div class="bg-[#240d10] border-2 border-rhRedBright rounded-2xl max-w-lg w-full p-6 space-y-4 text-white">
+    <div class="bg-[#38141a] border-2 border-rhRedBright rounded-2xl max-w-lg w-full p-6 space-y-4 text-white">
       <h3 class="font-serif font-black text-lg text-rhRedBright uppercase">Zero Reuniões Longas</h3>
-      <p class="text-xs text-slate-300 leading-relaxed">
+      <p class="text-xs text-slate-200 leading-relaxed">
         Sua equipe de açougue não perde tempo em reuniões de alinhamento. Mapeamos normas de higiene, tabela de cortes e regras de balcão por áudios e mensagens curtas no WhatsApp.
       </p>
-      <ul class="text-xs text-slate-300 space-y-1 list-disc pl-4">
+      <ul class="text-xs text-slate-200 space-y-1 list-disc pl-4">
         <li>Configuração da tecnologia em até 48 horas.</li>
         <li>Sem paralisar o atendimento aos clientes na loja.</li>
         <li>Aprovação rápida pelo celular da gerência.</li>
@@ -704,9 +705,9 @@
   </div>
 
   <div id="modal-impl-2" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 modal-backdrop">
-    <div class="bg-[#240d10] border-2 border-amber-500 rounded-2xl max-w-lg w-full p-6 space-y-4 text-white">
+    <div class="bg-[#38141a] border-2 border-amber-500 rounded-2xl max-w-lg w-full p-6 space-y-4 text-white">
       <h3 class="font-serif font-black text-lg text-amber-400 uppercase">Sem Sobrecarregar o Proprietário</h3>
-      <p class="text-xs text-slate-300 leading-relaxed">
+      <p class="text-xs text-slate-200 leading-relaxed">
         O proprietário precisa focar na compra de carnes e na rentabilidade. Nossa equipe alinha o fluxo do robô diretamente com o gerente de loja ou encarregado de balcão.
       </p>
       <button onclick="closeModal('modal-impl-2')" class="w-full py-2.5 bg-amber-500 text-slate-950 font-bold rounded-xl text-xs uppercase">Entendi ⚡</button>
@@ -714,9 +715,9 @@
   </div>
 
   <div id="modal-impl-3" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 modal-backdrop">
-    <div class="bg-[#240d10] border-2 border-emerald-500 rounded-2xl max-w-lg w-full p-6 space-y-4 text-white">
+    <div class="bg-[#38141a] border-2 border-emerald-500 rounded-2xl max-w-lg w-full p-6 space-y-4 text-white">
       <h3 class="font-serif font-black text-lg text-emerald-400 uppercase">Treinamento Direto no Celular</h3>
-      <p class="text-xs text-slate-300 leading-relaxed">
+      <p class="text-xs text-slate-200 leading-relaxed">
         Toda a instrução do time ocorre no aplicativo que eles já utilizam diariamente, com vídeos curtos e objetivos de 2 minutos.
       </p>
       <button onclick="closeModal('modal-impl-3')" class="w-full py-2.5 bg-emerald-500 text-slate-950 font-bold rounded-xl text-xs uppercase">Entendi ⚡</button>
@@ -725,42 +726,42 @@
 
   <!-- MODAIS ESTEIRA RH -->
   <div id="modal-step-1" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 modal-backdrop">
-    <div class="bg-[#240d10] border-2 border-rhRed rounded-2xl max-w-lg w-full p-6 space-y-4 text-white">
+    <div class="bg-[#38141a] border-2 border-rhRed rounded-2xl max-w-lg w-full p-6 space-y-4 text-white">
       <h3 class="font-serif font-black text-lg text-rhRedBright uppercase">01. Captação no Celular</h3>
-      <p class="text-xs text-slate-300">Receba currículos para açougueiros, desossadores e atendentes de balcão 24 horas por dia no WhatsApp, sem perder papéis ou contatos soltos.</p>
+      <p class="text-xs text-slate-200">Receba currículos para açougueiros, desossadores e atendentes de balcão 24 horas por dia no WhatsApp, sem perder papéis ou contatos soltos.</p>
       <button onclick="closeModal('modal-step-1')" class="w-full py-2.5 bg-rhRed text-white font-bold rounded-xl text-xs uppercase">Fechar ⚡</button>
     </div>
   </div>
 
   <div id="modal-step-2" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 modal-backdrop">
-    <div class="bg-[#240d10] border-2 border-rhRed rounded-2xl max-w-lg w-full p-6 space-y-4 text-white">
+    <div class="bg-[#38141a] border-2 border-rhRed rounded-2xl max-w-lg w-full p-6 space-y-4 text-white">
       <h3 class="font-serif font-black text-lg text-rhRedBright uppercase">02. Triagem Rápida</h3>
-      <p class="text-xs text-slate-300">O robô faz perguntas automáticas sobre tempo de experiência em corte e desossa antes de repassar os melhores perfis ao gerente.</p>
+      <p class="text-xs text-slate-200">O robô faz perguntas automáticas sobre tempo de experiência em corte e desossa antes de repassar os melhores perfis ao gerente.</p>
       <button onclick="closeModal('modal-step-2')" class="w-full py-2.5 bg-rhRed text-white font-bold rounded-xl text-xs uppercase">Fechar ⚡</button>
     </div>
   </div>
 
   <div id="modal-step-3" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 modal-backdrop">
-    <div class="bg-[#240d10] border-2 border-rhRed rounded-2xl max-w-lg w-full p-6 space-y-4 text-white">
+    <div class="bg-[#38141a] border-2 border-rhRed rounded-2xl max-w-lg w-full p-6 space-y-4 text-white">
       <h3 class="font-serif font-black text-lg text-rhRedBright uppercase">03. Página de Integração</h3>
-      <p class="text-xs text-slate-300">Apresente a história do açougue, regras de postura e normas de higiene em uma página moderna enviada ao celular do novo colaborador.</p>
+      <p class="text-xs text-slate-200">Apresente a história do açougue, regras de postura e normas de higiene em uma página moderna enviada ao celular do novo colaborador.</p>
       <button onclick="closeModal('modal-step-3')" class="w-full py-2.5 bg-rhRed text-white font-bold rounded-xl text-xs uppercase">Fechar ⚡</button>
     </div>
   </div>
 
   <div id="modal-step-4" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 modal-backdrop">
-    <div class="bg-[#240d10] border-2 border-rhRed rounded-2xl max-w-lg w-full p-6 space-y-4 text-white">
+    <div class="bg-[#38141a] border-2 border-rhRed rounded-2xl max-w-lg w-full p-6 space-y-4 text-white">
       <h3 class="font-serif font-black text-lg text-rhRedBright uppercase">04. Módulos de Treinamento</h3>
-      <p class="text-xs text-slate-300">Instruções sobre atendimento, limpeza e conservação de carnes acessíveis a qualquer momento pelo WhatsApp do funcionário.</p>
+      <p class="text-xs text-slate-200">Instruções sobre atendimento, limpeza e conservação de carnes acessíveis a qualquer momento pelo WhatsApp do funcionário.</p>
       <button onclick="closeModal('modal-step-4')" class="w-full py-2.5 bg-rhRed text-white font-bold rounded-xl text-xs uppercase">Fechar ⚡</button>
     </div>
   </div>
 
   <!-- MODAIS FILOSOFIA -->
   <div id="modal-repetitivo" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 modal-backdrop">
-    <div class="bg-[#240d10] border-2 border-rhRed rounded-2xl max-w-xl w-full p-6 space-y-4 text-white">
+    <div class="bg-[#38141a] border-2 border-rhRed rounded-2xl max-w-xl w-full p-6 space-y-4 text-white">
       <h3 class="font-serif font-black text-lg text-rhRedBright uppercase">Como Funciona a Atualização do Conteúdo?</h3>
-      <p class="text-xs text-slate-300 leading-relaxed">
+      <p class="text-xs text-slate-200 leading-relaxed">
         Sua gerência pode atualizar folgas, escalas e comunicados em menos de 1 minuto em um painel simples, ou simplesmente enviar um áudio para o nosso suporte que atualizamos para você.
       </p>
       <button onclick="closeModal('modal-repetitivo')" class="w-full py-2.5 bg-rhRed text-white font-bold rounded-xl text-xs uppercase">Entendi ⚡</button>
@@ -768,9 +769,9 @@
   </div>
 
   <div id="modal-valorizacao" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 modal-backdrop">
-    <div class="bg-[#240d10] border-2 border-agileAmber rounded-2xl max-w-xl w-full p-6 space-y-4 text-white">
+    <div class="bg-[#38141a] border-2 border-agileAmber rounded-2xl max-w-xl w-full p-6 space-y-4 text-white">
       <h3 class="font-serif font-black text-lg text-agileAmber uppercase">Ações Práticas de Valorização</h3>
-      <p class="text-xs text-slate-300 leading-relaxed">
+      <p class="text-xs text-slate-200 leading-relaxed">
         Com o robô tirando dúvidas de rotina no WhatsApp, a gerência ganha tempo para dar feedback ao time, acompanhar a qualidade do atendimento no balcão e manter o ambiente motivado.
       </p>
       <button onclick="closeModal('modal-valorizacao')" class="w-full py-2.5 bg-agileAmber text-slate-950 font-bold rounded-xl text-xs uppercase">Fechar ⚡</button>
@@ -778,9 +779,9 @@
   </div>
 
   <div id="modal-banco-talentos" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 modal-backdrop">
-    <div class="bg-[#240d10] border-2 border-emerald-500 rounded-2xl max-w-xl w-full p-6 space-y-4 text-white">
+    <div class="bg-[#38141a] border-2 border-emerald-500 rounded-2xl max-w-xl w-full p-6 space-y-4 text-white">
       <h3 class="font-serif font-black text-lg text-emerald-400 uppercase">Tecnologia para Captação de Talentos</h3>
-      <p class="text-xs text-slate-300 leading-relaxed">
+      <p class="text-xs text-slate-200 leading-relaxed">
         O WhatsApp recebe currículos 24h por dia, pergunta a vaga desejada (desossador, balconista, caixa) e entrega uma lista organizada no sistema para o gerente agendar entrevistas.
       </p>
       <button onclick="closeModal('modal-banco-talentos')" class="w-full py-2.5 bg-emerald-500 text-slate-950 font-bold rounded-xl text-xs uppercase">Entendi ⚡</button>
@@ -789,14 +790,14 @@
 
   <!-- MODAL PRIVACIDADE & TERMOS (LGPD & DISCLAIMER META) -->
   <div id="modal-privacidade" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 modal-backdrop">
-    <div class="bg-[#240d10] border-2 border-red-900 rounded-3xl max-w-2xl w-full p-6 space-y-4 text-white max-h-[90vh] overflow-y-auto shadow-2xl">
-      <div class="flex justify-between items-center border-b border-red-950/80 pb-3">
+    <div class="bg-[#38141a] border-2 border-rose-900 rounded-3xl max-w-2xl w-full p-6 space-y-4 text-white max-h-[90vh] overflow-y-auto shadow-2xl">
+      <div class="flex justify-between items-center border-b border-rose-900/60 pb-3">
         <h3 class="font-serif font-black text-lg text-slate-200 uppercase">
           Política de Privacidade &amp; Avisos Legais
         </h3>
         <button onclick="closeModal('modal-privacidade')" class="text-slate-400 hover:text-white font-black text-xl">✕</button>
       </div>
-      <div class="space-y-3 text-xs text-slate-300 text-left">
+      <div class="space-y-3 text-xs text-slate-200 text-left">
         <h4 class="font-bold text-white uppercase text-[11px] tracking-wider">1. Proteção de Dados e LGPD</h4>
         <p class="leading-relaxed">
           A <strong>FLUXUS TECNOLOGIA DA INFORMAÇÃO</strong> (CNPJ 18.647.981/0001-29) atua no tratamento de dados pessoais estritamente sob o consentimento dos titulares e em conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018). Os dados coletados através do WhatsApp ou formulários (como nome, telefone e currículos) são utilizados exclusivamente para as finalidades de recrutamento, seleção e atendimento operacional solicitados pela empresa contratante.
@@ -812,20 +813,20 @@
           Garantimos o isolamento das informações tratadas por meio de conexões encriptadas via HTTPS e TLS. Nossos clientes possuem total propriedade e controle sobre as chaves de API, banco de dados e dados cadastrais de seus colaboradores e candidatos.
         </p>
       </div>
-      <button onclick="closeModal('modal-privacidade')" class="w-full py-3 bg-black border border-red-950 text-white font-black uppercase rounded-xl hover:bg-rhRed transition">
+      <button onclick="closeModal('modal-privacidade')" class="w-full py-3 bg-[#1f0a0e] border border-rose-900 text-white font-black uppercase rounded-xl hover:bg-rhRed transition">
         Compreendido ⚡
       </button>
     </div>
   </div>
 
   <!-- FOOTER OFICIAL UNIFICADO -->
-  <footer style="background-color: #0e0405; color: #cbd5e1; border-top: 2px solid #280b0f; padding: 40px 0 20px 0; font-family: Arial, Helvetica, sans-serif; width: 100%;">
+  <footer style="background-color: #1f0a0e; color: #cbd5e1; border-top: 2px solid #4a1a22; padding: 40px 0 20px 0; font-family: Arial, Helvetica, sans-serif; width: 100%;">
     <div class="w-full max-w-[1440px] mx-auto px-6 lg:px-12" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 28px;">
       
       <!-- COLUNA 1: MARCA & DADOS FISCAIS -->
       <div style="flex: 1; min-width: 280px; display: flex; flex-direction: column; gap: 10px; text-align: left;">
         <div style="display: flex; align-items: center; gap: 10px;">
-          <div style="width: 38px; height: 38px; border-radius: 8px; overflow: hidden; background: #000000; border: 2px solid #3b0d11; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+          <div style="width: 38px; height: 38px; border-radius: 8px; overflow: hidden; background: #000000; border: 2px solid #5c1e28; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
             <img src="src/images/favicon-fluxus.jpg" alt="Logo Fluxus" style="width: 100%; height: 100%; object-fit: cover; transform: scale(1.1);" onerror="this.onerror=null; this.src='https://api.qrserver.com/v1/create-qr-code/?size=85x85&data=https://wa.me/551236006887';" />
           </div>
           <span style="font-size: 1.25rem; font-weight: 900; letter-spacing: -0.5px; color: #ffffff; text-transform: uppercase;">FLUXUS</span>
@@ -841,14 +842,14 @@
 
       <!-- COLUNA 2: QR CODE CENTRALIZADO -->
       <div style="flex: 1; min-width: 240px; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 6px;">
-        <div style="display: flex; align-items: center; gap: 12px; background: #240d10; padding: 10px 14px; border-radius: 8px; border: 1px solid #451217; width: fit-content;">
+        <div style="display: flex; align-items: center; gap: 12px; background: #38141a; padding: 10px 14px; border-radius: 8px; border: 1px solid #5c1e28; width: fit-content;">
           <img src="https://api.qrserver.com/v1/create-qr-code/?size=85x85&data=https://wa.me/551236006887" alt="QR Code WhatsApp" style="width: 70px; height: 70px; border-radius: 6px; background: #ffffff; padding: 2px;">
           <div style="display: flex; flex-direction: column; gap: 2px; text-align: left;">
             <span style="font-size: 0.85rem; font-weight: bold; color: #ffffff;">Escaneie o QR Code</span>
             <span style="font-size: 0.75rem; color: #94a3b8;">Fale direto no WhatsApp</span>
           </div>
         </div>
-        <button onclick="openModal('modal-privacidade')" style="font-size: 0.72rem; color: #ef4444; background: transparent; border: none; cursor: pointer; text-decoration: underline; margin-top: 2px;">
+        <button onclick="openModal('modal-privacidade')" style="font-size: 0.72rem; color: #f43f5e; background: transparent; border: none; cursor: pointer; text-decoration: underline; margin-top: 2px;">
           Política de Privacidade &amp; Isenção Meta (Disclaimer)
         </button>
       </div>
@@ -863,7 +864,7 @@
 
     </div>
 
-    <div class="w-full max-w-[1440px] mx-auto px-6 lg:px-12" style="margin-top: 24px; padding-top: 16px; border-top: 1px solid #280b0f; text-align: center; font-size: 0.78rem; font-weight: 600; color: #64748b;">
+    <div class="w-full max-w-[1440px] mx-auto px-6 lg:px-12" style="margin-top: 24px; padding-top: 16px; border-top: 1px solid #4a1a22; text-align: center; font-size: 0.78rem; font-weight: 600; color: #64748b;">
       © 2026 Fluxus. Todos os direitos reservados. Engenharia de Inteligência Operacional &amp; Soluções Ágeis.
     </div>
   </footer>
